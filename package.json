@@ -1,0 +1,14 @@
+{
+  "name": "meme-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MacHyver/meme-scraper.git",
+  "author": "MacHyver <mrs_machyver@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "get-image-urls": "^1.0.5",
+    "get-urls": "^9.2.0",
+    "jquery": "^3.5.1"
+  }
+}
