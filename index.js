@@ -10,7 +10,18 @@ request('https://memegen.link/examples', function (error, response, body) {
   var re = /<img[^>]+src="([^">]+)/g;
   var results = body.match(re);
 
-  console.log(results);
+  //var onlyTen = results.slice(10, results.length);
+  // somehow https://memegen.link/examples + everything after src=" until'
+  //.TrimStart("<img class="meme-img" src=")
+
+  var str = '<img class="meme-img" src=';
+  var res = str.replace(/<img class="meme-img" src=/g, 'https://memegen.link');
+
+  console.log(res);
+
+  //const userNames = ['Rhaisa', 'Sara', 'Sari', 'Tamara'];
+  //const newUserNames = userNames.filter((userName, index) => index !== 1);
+  //console.log(results.slice(1, 11);
 });
 
 {
